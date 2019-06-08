@@ -53,7 +53,7 @@ a {
   visibility: hidden; }
 
 .offcanvas-menu .site-wrap {
-  position: absolute;
+  /* position: absolute; */
   height: 100%;
   width: 100%;
   z-index: 2;
