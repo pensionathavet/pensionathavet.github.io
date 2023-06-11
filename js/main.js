@@ -156,7 +156,7 @@ jQuery(document).ready(function($) {
 	};
         siteMagnificPopup();
 
-    ['nordland', 'stjarnvik', 'klintskar', 'kungsvik', 'ranskar'].forEach(function(room) {
+    ['nordland', 'stjarnvik', 'klintskar', 'kungsvik'].forEach(function(room) {
         $('#' + room).magnificPopup({
             items: [
                 {
@@ -167,6 +167,32 @@ jQuery(document).ready(function($) {
                 },
                 {
                     src: 'images/rooms/' + room + '/3.jpg',
+                }
+            ],
+            gallery: {
+                enabled: true
+            },
+            type: 'image'
+        });
+    });
+
+    ['ranskar', 'trebadd'].forEach(function(room) {
+        $('#' + room).magnificPopup({
+            items: [
+                {
+                    src: 'images/rooms/' + room + '/1.jpg'
+                },
+                {
+                    src: 'images/rooms/' + room + '/2.jpg',
+                },
+                {
+                    src: 'images/rooms/' + room + '/3.jpg',
+                },
+                {
+                    src: 'images/rooms/' + room + '/4.jpg',
+                },
+                {
+                    src: 'images/rooms/' + room + '/5.jpg',
                 }
             ],
             gallery: {
